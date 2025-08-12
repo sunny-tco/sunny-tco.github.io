@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on 欢迎来到我的个人空间</title>
+    <link>https://sunny-tco.github.io/</link>
+    <description>Recent content in Home on 欢迎来到我的个人空间</description>
+    <generator>Hugo</generator>
+    <language>cn-zh</language>
+    <lastBuildDate>Tue, 12 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sunny-tco.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The evolution of agents</title>
+      <link>https://sunny-tco.github.io/posts/the-evolution-of-agents/</link>
+      <pubDate>Tue, 12 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://sunny-tco.github.io/posts/the-evolution-of-agents/</guid>
+      <description>An LSM Tree overview and Java implementation, with a Skiplist, SStables, and background compaction from scratch.</description>
+    </item>
+    <item>
+      <title>Probabilistic to-visit Queue</title>
+      <link>https://sunny-tco.github.io/posts/prob-queue/</link>
+      <pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://sunny-tco.github.io/posts/prob-queue/</guid>
+      <description>A probabilistic collection leveraging Bloom Filters to store a set of 1 billion visited URLs in 18mb.</description>
+    </item>
+    <item>
+      <title>Search Engine in Rust</title>
+      <link>https://sunny-tco.github.io/posts/search-engine/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://sunny-tco.github.io/posts/search-engine/</guid>
+      <description>A search engine overview and Rust implementation, supporting free and boolean ranked queries, efficient disk and memory usage, and spelling correction.</description>
+    </item>
+    <item>
+      <title>Log-Structured Merge Tree</title>
+      <link>https://sunny-tco.github.io/posts/lsm/</link>
+      <pubDate>Sun, 12 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://sunny-tco.github.io/posts/lsm/</guid>
+      <description>An LSM Tree overview and Java implementation, with a Skiplist, SStables, and background compaction from scratch.</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://sunny-tco.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sunny-tco.github.io/about/</guid>
+      <description>&lt;p&gt;Hi all, I’m a software engineer currently working on search infrastructure at Apple in Zurich. Before that, I was at Amazon’s Berlin office.&lt;/p&gt;&#xA;&lt;p&gt;I hold a Bachelor’s degree from the &lt;a href=&#34;https://www.unitn.it/&#34;&gt;University of Trento&lt;/a&gt; and a Master’s degree from the &lt;a href=&#34;https://www.unimi.it/&#34;&gt;University of Milan&lt;/a&gt;. During my studies, I developed a strong interest in algorithms, data structures, distributed systems, databases, and search engines. I explored these areas through my Master’s thesis on &lt;a href=&#34;https://github.com/tomfran/ANS-Graph-compression&#34;&gt;graph compression&lt;/a&gt; and through side projects, including implementations of an &lt;a href=&#34;https://github.com/tomfran/LSM-Tree&#34;&gt;LSM tree&lt;/a&gt; and a &lt;a href=&#34;https://github.com/tomfran/search-rs&#34;&gt;search engine&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Library</title>
+      <link>https://sunny-tco.github.io/library/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sunny-tco.github.io/library/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://dataintensive.net/&#34;&gt;Designing Data-Intensive Applications&lt;/a&gt; &lt;br&gt;&#xA;Excellent book about many distributed systems concepts, databases, and big data processing ideas.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://nlp.stanford.edu/IR-book/information-retrieval-book.html&#34;&gt;Introduction to information retrieval&lt;/a&gt; &lt;br&gt;&#xA;How search engines work, how they are built and maintained. Also covers web crawling.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://aipoweredsearch.com/&#34;&gt;AI-Powered Search&lt;/a&gt; &lt;br&gt;&#xA;Building AI-enhanced modern search engines, covering semantic search, learn to rank, LLM summaries, etc.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.databass.dev/&#34;&gt;Database Internals&lt;/a&gt; &lt;br&gt;&#xA;Deep dive into database concepts that the first book only touches briefly, like data organization on disk, log-structured databases, and so on. It also covers distributed systems.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
