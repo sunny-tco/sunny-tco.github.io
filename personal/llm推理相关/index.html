@@ -2,7 +2,7 @@
 <html lang="cn-zh"
   dir="ltr">
 
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=11446&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 
@@ -20,11 +20,11 @@
 
 
 
-<link rel="icon" type="image/ico" href="https:/sunny-tco.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https:/sunny-tco.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https:/sunny-tco.github.io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="https:/sunny-tco.github.io/android-chrome-192x192.png">
-<link rel="apple-touch-icon" sizes="180x180" href="https:/sunny-tco.github.io/apple-touch-icon.png">
+<link rel="icon" type="image/ico" href="http:/localhost:11446/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http:/localhost:11446/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http:/localhost:11446/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="http:/localhost:11446/android-chrome-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http:/localhost:11446/apple-touch-icon.png">
 
 <meta name="description" content="A Log Structured Merge Tree overview and implementation using Java, including SSTables, Bloom Filter, and a Skiplist from scratch."/>
 
@@ -32,19 +32,19 @@
 
 <title>
     
-    The evolution of agents | 欢迎来到我的个人空间
+    LLM推理相关 | 欢迎来到我的个人空间
     
 </title>
 
-<link rel="canonical" href="https://sunny-tco.github.io/posts/the-evolution-of-agents/"/>
+<link rel="canonical" href="http://localhost:11446/personal/llm%E6%8E%A8%E7%90%86%E7%9B%B8%E5%85%B3/"/>
 
-<meta property="og:url" content="https://sunny-tco.github.io/posts/the-evolution-of-agents/">
+<meta property="og:url" content="http://localhost:11446/personal/llm%E6%8E%A8%E7%90%86%E7%9B%B8%E5%85%B3/">
   <meta property="og:site_name" content="欢迎来到我的个人空间">
-  <meta property="og:title" content="The evolution of agents">
+  <meta property="og:title" content="LLM推理相关">
   <meta property="og:description" content="A Log Structured Merge Tree overview and implementation using Java, including SSTables, Bloom Filter, and a Skiplist from scratch.">
   <meta property="og:locale" content="cn_zh">
   <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
+    <meta property="article:section" content="personal">
     <meta property="article:published_time" content="2025-08-12T00:00:00+00:00">
     <meta property="article:modified_time" content="2025-08-12T00:00:00+00:00">
     <meta property="article:tag" content="Trend">
@@ -62,24 +62,6 @@
 
 
 <link rel="stylesheet" href="/assets/combined.min.92c3bf7119b98cfdc79e93f36a451eb901d8bbbfed7d75814e6436cf6c9085dc.css" media="all">
-
-
-
-
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-xxxxxxxxx"></script>
-      <script>
-        var doNotTrack = false;
-        if ( false ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-xxxxxxxxx');
-        }
-      </script>
 
 
 
@@ -115,7 +97,7 @@
     
 
     <h1 class="header-title">
-        <a href="https://sunny-tco.github.io/">欢迎来到我的个人空间</a>
+        <a href="http://localhost:11446/">欢迎来到我的个人空间</a>
     </h1>
 
     <div class="header-menu">
@@ -170,16 +152,16 @@
 
 
 
-<div class="breadcrumbs"><a href="/">Home</a><span class="breadcrumbs-separator">/</span><a href="/posts/">Posts</a><span class="breadcrumbs-separator">/</span>
-        <a href="/posts/the-evolution-of-agents/">The evolution of agents</a></div>
+<div class="breadcrumbs"><a href="/">Home</a><span class="breadcrumbs-separator">/</span><a href="/personal/">个人笔记</a><span class="breadcrumbs-separator">/</span>
+        <a href="/personal/llm%E6%8E%A8%E7%90%86%E7%9B%B8%E5%85%B3/">LLM推理相关</a></div>
 
 
 <div  class="autonumber" >
   <article>
     <header class="single-intro-container">
         
-        <h1 class="single-title">The evolution of agents</h1>
-        <p class="single-summary">An LSM Tree overview and Java implementation, with a Skiplist, SStables, and background compaction from scratch.</p>
+        <h1 class="single-title">LLM推理相关</h1>
+        <p class="single-summary">在这里我会把关于LLM推理的相关进展整理好，主要来源于我看到的公众号（尤其是中文三大会，新智元，机器之心，量子位。我认为如果作者很满意TA的工作，应该会做各种宣传），论文以及小红书相关的讨论（小红书已经成为国内的学术高地了hh）</p>
         
         <div class="single-subsummary">
           
@@ -193,16 +175,16 @@
         
     </header>    
         <div class="single-tags"><span>
-                  <a href="https://sunny-tco.github.io/tags/trend/">#Trend</a>
+                  <a href="http://localhost:11446/tags/trend/">#Trend</a>
                 </span><span>
-                  <a href="https://sunny-tco.github.io/tags/agent/">#Agent</a>
+                  <a href="http://localhost:11446/tags/agent/">#Agent</a>
                 </span>
         </div>
       <aside class="toc">
         <p><strong>Table of contents</strong></p>
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#agent入门介绍">Agent入门介绍</a></li>
     <li><a href="#memtable">Memtable</a>
       <ul>
         <li><a href="#searching">Searching</a></li>
@@ -234,27 +216,22 @@
       </aside>
     
     <div class="single-content">
-      <p>I studied LSM trees at university and after encountering them twice in
-<a href="https://dataintensive.net/">Designing Data-Intensive Applications</a> and
-<a href="https://www.databass.dev/">Database Internals</a> I decided to implement something in Java.</p>
-<p>The idea behind this project is not to provide the most
-efficient implementation ever, but to experiment with
-storing data on disk, any suggestions are welcome!</p>
-<p>Here&rsquo;s the <a href="https://github.com/tomfran/LSM-Tree/tree/main">Github repo</a> if you want to have a look,
-this article is also published on <a href="https://medium.com/@tomfran/log-structured-merge-tree-a79241c959e3">Medium</a>.</p>
-<h2 class="heading" id="introduction">
-  Introduction
-  <a class="anchor" href="#introduction">#</a>
+      <h2 class="heading" id="agent入门介绍">
+  Agent入门介绍
+  <a class="anchor" href="#agent%e5%85%a5%e9%97%a8%e4%bb%8b%e7%bb%8d">#</a>
 </h2>
-<p>An LSM tree is a structure used by NoSQL databases, such as
-Cassandra, RocksDB, LevelDB, Dynamo, and so on. It&rsquo;s suitable for write-intensive applications.</p>
-<p>We can distinguish two key components of the tree, the
-in-memory buffer, also called Memtable, and the disk-resident tables. The main
-idea is to accept writes to the in-memory part of the tree, and to flush them
-periodically, or when a certain size is met.</p>
-<p>A key aspect of this structure is ordering, indeed, keys are sorted both in RAM and
-on disk, enabling logarithmic searches.</p>
-<p>For the sake of this project elements in the tree are simple key-value pairs.</p>
+<ul>
+<li><a href="https://cameronrwolfe.substack.com/p/ai-agents">AI Agents from First Principles</a>
+<ul>
+<li>计划器</li>
+<li>记忆</li>
+<li>工具调用</li>
+</ul>
+</li>
+<li>典型应用场景</li>
+<li>核心组件</li>
+<li>试一下</li>
+</ul>
 <h2 class="heading" id="memtable">
   Memtable
   <a class="anchor" href="#memtable">#</a>
@@ -284,8 +261,8 @@ carefully constructing them, we can reduce the number of links we need to traver
 
 <figure class=" img-light">
 
-    <div class="img-container" style="--w: 1488; --h: 496;">
-        <img loading="lazy" alt="skiplist" src="/posts/the-evolution-of-agents/skiplist-l.webp#light" width="1488" height="496">
+    <div class="img-container" >
+        <img loading="lazy" alt="skiplist" src="skiplist-l.webp#light" >
     </div>
 
     
@@ -308,8 +285,8 @@ carefully constructing them, we can reduce the number of links we need to traver
 
 <figure class=" img-dark">
 
-    <div class="img-container" style="--w: 1488; --h: 496;">
-        <img loading="lazy" alt="skiplist" src="/posts/the-evolution-of-agents/skiplist-d.webp#dark" width="1488" height="496">
+    <div class="img-container" >
+        <img loading="lazy" alt="skiplist" src="skiplist-d.webp#dark" >
     </div>
 
     
@@ -411,8 +388,8 @@ a linear scan. This permits us to skip a lot of unnecessary comparisons and loca
 
 <figure class=" img-light">
 
-    <div class="img-container" style="--w: 1738; --h: 684;">
-        <img loading="lazy" alt="sstable" src="/posts/the-evolution-of-agents/sstable-l.webp#light" width="1738" height="684">
+    <div class="img-container" >
+        <img loading="lazy" alt="sstable" src="sstable-l.webp#light" >
     </div>
 
     
@@ -435,8 +412,8 @@ a linear scan. This permits us to skip a lot of unnecessary comparisons and loca
 
 <figure class=" img-dark">
 
-    <div class="img-container" style="--w: 1738; --h: 684;">
-        <img loading="lazy" alt="sstable" src="/posts/the-evolution-of-agents/sstable-d.webp#dark" width="1738" height="684">
+    <div class="img-container" >
+        <img loading="lazy" alt="sstable" src="sstable-d.webp#dark" >
     </div>
 
     
@@ -562,8 +539,8 @@ level zero containing the most recent data.</li>
 
 <figure class=" img-light">
 
-    <div class="img-container" style="--w: 1843; --h: 982;">
-        <img loading="lazy" alt="tree" src="/posts/the-evolution-of-agents/tree-l.webp#light" width="1843" height="982">
+    <div class="img-container" >
+        <img loading="lazy" alt="tree" src="tree-l.webp#light" >
     </div>
 
     
@@ -586,8 +563,8 @@ level zero containing the most recent data.</li>
 
 <figure class=" img-dark">
 
-    <div class="img-container" style="--w: 1843; --h: 982;">
-        <img loading="lazy" alt="tree" src="/posts/the-evolution-of-agents/tree-d.webp#dark" width="1843" height="982">
+    <div class="img-container" >
+        <img loading="lazy" alt="tree" src="tree-d.webp#dark" >
     </div>
 
     
@@ -731,18 +708,18 @@ a given probability distribution of integers.&#160;<a href="#fnref:2" class="foo
 
         <div class="single-pagination-prev">
             
-            <div class="single-pagination-container-prev">
-                <div class="single-pagination-text">←</div>
-                <div class="single-pagination-text">
-                    <a href="/posts/prob-queue/">
-                        Probabilistic to-visit Queue
-                    </a>
-                </div>
-            </div>
-            
         </div>
 
         <div class="single-pagination-next">
+            
+            <div class="single-pagination-container-next">
+                <div class="single-pagination-text">
+                    <a href="/personal/agent%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86/">
+                        Agent资料整理
+                    </a>
+                </div>
+                <div class="single-pagination-text">→</div>
+            </div>
             
         </div>
 
@@ -811,26 +788,6 @@ a given probability distribution of integers.&#160;<a href="#fnref:2" class="foo
 
   </footer>
 
-  
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css">
-<script defer
-  src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script>
-
-<script defer
-  src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body);"></script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    renderMathInElement(document.body, {
-      delimiters: [
-        { left: "$$", right: "$$", display: true },
-        { left: "$", right: "$", display: false }
-      ]
-    });
-  });
-</script>
   
 </body>
 
